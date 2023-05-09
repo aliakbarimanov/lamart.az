@@ -1,0 +1,1 @@
+Qeyd 1. Məhsullara əlavə olunan şəkilin eni hündürlüyündən böyük olmalıdır. Əks halda şəkilin görünüşü pozulacaq.

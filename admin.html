@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMART.AZ</title>
+    <link rel="icon" href="img/title/title.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <!-- BS5.1 link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="home">
+        <div id="header">
+            <div id="logo">
+                <img src="img/logo/logo.png" alt="Logo">
+            </div>
+            <div id="title">lamart.az</div>
+            <div id="descriptionHead">Admin panel</div>
+        </div>
+        <div id="secondNavbar">
+            <div id="user">
+                <div id="userImg">
+                    <img src="img/user/1.jpg" alt="User photo">
+                </div>
+                <div id="username">Aliakbar Imanov</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="newPro">
+        <button id="newProButton">Yeni məhsul əlavə et</button>
+    </div>
+
+    <div id="insertForm">
+        <h3>Yeni məhsulun əlavə edilməsi</h3>
+        <form>
+            <label for="productName">Məhsulun adı</label>
+            <input type="text">
+            <label for="productName">Məhsulun kateqoriyası</label>
+            <select>
+                <option>Kateqoriyanı seçin</option>
+                <option>Qonaq otağı</option>
+                <option>Mətbəx mebeli</option>
+                <option>Yataq otağı</option>
+                <option>Digər mebellər</option>
+            </select>
+            <label for="productName">Məhsulun fotosu</label>
+            <input type="text">
+            <label for="productName">Məhsulun qiyməti</label>
+            <input type="text">
+            <label for="productName">Məhsul haqqında</label>
+            <textarea></textarea>
+            <div class="formButtons">
+                <button id="enterPro">Daxil et</button>
+                <button id="cancelPro">Ləğv et</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="editNot">
+        <h3>Məhsulun redaktə edilməsi</h3>
+        <form>
+            <label for="productName">Məhsulun adı</label>
+            <input type="text" value="Ali">
+            <label for="productName">Məhsulun kateqoriyası</label>
+            <select>
+                <option>Kateqoriyanı seçin</option>
+                <option>Qonaq otağı</option>
+                <option>Mətbəx mebeli</option>
+                <option>Yataq otağı</option>
+                <option>Digər mebellər</option>
+            </select>
+            <label for="productName">Məhsulun fotosu</label>
+            <input type="text" value="Ali">
+            <label for="productName">Məhsulun qiyməti</label>
+            <input type="text" value="Ali">
+            <label for="productName">Məhsul haqqında</label>
+            <textarea>Aliakbar</textarea>
+            <div class="formButtons">
+                <button id="updatePro">Yenilə</button>
+                <button id="cancelProEdit">Ləğv et</button>
+            </div>
+        </form>
+    </div>
+    <div class="updateInfo" id="updateSuccess">Məhsul uğurla yeniləndi.</div>
+    <div class="updateInfo" id="updateUnsuccess">Məhsulu yeniləmək mümkün olmadı.</div>
+
+    <div id="deleteNot">
+        <div id="deleteName"><a>Chair</a> adlı məhsulu silməyə əminsinizmi?</div>
+        <div id="deleteButtons">
+            <button id="deleteOk">Sil</button>
+            <button id="deleteCancel">Ləğv et</button>
+        </div>
+    </div>
+    <div class="deleteInfo" id="deleteSuccess">Məhsul uğurla silindi.</div>
+    <div class="deleteInfo" id="deleteUnsuccess">Məhsulu silmək mümkün olmadı.</div>
+
+    <div id="sectionNot">Məhsullara baxmaq üçün cihazı üfüqi vəziyyətə gətirin.
+                         Məhsullar yenədə görünmürsə daha böyük cihazdan istifadə edin.</div>
+    <section>
+        <div id="menu">
+            <ul>
+                <li><a href="#">Qonaq otağı</a></li>
+                <li><a href="#">Mətbəx mebeli</a></li>
+                <li><a href="#">Yataq otağı</a></li>
+                <li><a href="#">Digər mebellər</a></li>
+            </ul>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No:</th>
+                    <th>Foto</th>
+                    <th>Ad</th>
+                    <th>Qiymət</th>
+                    <th>Haqqında</th>
+                    <th>Kateqoriya</th>
+                    <th>Redaktə</th>
+                    <th>Sil</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td><img src="img/categories/bedroom/1.jpg" alt="Məhsul fotosu"></td>
+                    <td>Chair</td>
+                    <td>15.99</th>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ad?</th>
+                    <td>Qonaq otağı</th>
+                    <td><button class="edit">Redaktə et</button></th>
+                    <td><button class="delete">Sil</button></th>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td><img src="img/categories/bedroom/1.jpg" alt="Məhsul fotosu"></td>
+                    <td>Chair</td>
+                    <td>15.99</th>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ad?</th>
+                    <td>Qonaq otağı</th>
+                    <td><button class="edit">Redaktə et</button></th>
+                    <td><button class="delete">Sil</button></th>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td><img src="img/categories/bedroom/1.jpg" alt="Məhsul fotosu"></td>
+                    <td>Chair</td>
+                    <td>15.99</th>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ad?</th>
+                    <td>Qonaq otağı</th>
+                    <td><button class="edit">Redaktə et</button></th>
+                    <td><button class="delete">Sil</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <div id="footerTop">
+            <div id="footerLeft">
+                <div id="footerTitle">lamart.az</div>
+                <div id="descriptionBottom">Evinizin üslubunu dəyişin.</div>
+            </div>
+            <ul id="footerMenu">
+                <li><a href="#">Qonaq otağı</a></li>
+                <li><a href="#">Mətbəx mebeli</a></li>
+                <li><a href="#">Yataq otağı</a></li>
+                <li><a href="#">Digər mebellər</a></li>
+            </ul>
+            <div id="userFooter">
+                <div id="descFooter">Admin panel</div>
+                <div id="fullname">Aliakbar Imanov</div>
+            </div>
+        </div>
+        <div id="footerBottom">
+            <div id="designer">This site created by: <a href="#">Aliakbar Imanov</a></div>
+            <div id="year">2023 ©</div>
+        </div>
+    </footer>
+
+    <!-- BS5.1 link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

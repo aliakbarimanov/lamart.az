@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1000.1px) and (max-width: 1200px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #home{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Header */
+    #header{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: black;
+    }
+
+    #logo{
+        width: 110px;
+        height: 110px;
+        padding: 6px 0 0 0;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    #title{
+        font-size: 30px;
+        padding: 75px 0 0 0;
+        font-family: 'Lobster', cursive;
+    }
+
+    #navbar{
+        display: flex;
+        padding: 90px 0 0 0;
+    }
+
+    #navbar li{
+        padding: 0;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 1s;
+        color: black;
+        padding: 0 15px 0 0;
+    }
+
+    #navbar a:hover{
+        color: #e80000;
+    }
+
+
+    /*SecondNavbar */
+    #secondNavbar{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 0 60px;
+        background-color: #535353;
+        color: white;
+    }
+
+    #telephone{
+        width: 88%;
+        font-size: 20px;
+    }
+
+    #telNumber{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    #homeSI{
+        width: 12%;
+        display: flex;
+        padding: 10px 0 0 0;
+    }
+
+    #homeSI li:last-child{
+        padding: 0 0 0 10px;
+    }
+
+    #homeSI a{
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px 7px 7px 9px;
+        color: black;
+        background: white; 
+    }
+
+
+    /* section */
+    section{
+        width: 100%;
+        padding: 50px;
+    }
+  
+    #product{
+        width: 100%;
+        display: flex;
+    }
+  
+    #productImg{
+        width: 1100px;
+        height: 400px;
+    }
+  
+    #mainImg{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    #details{
+        display: block;
+        padding: 50px;
+    }
+  
+    #about{
+        font-size: 21px;
+    }
+  
+    #infos{
+        padding: 200px 10px 0 6px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #535353;
+    }
+  
+    #name{
+        font-size: 20px;
+    }
+  
+    #price{
+        font-size: 20px;
+        font-weight: 600;
+    }
+  
+    #price a{
+        font-weight: 100;
+    }
+  
+    #miniImgs{
+        width: 100%;
+        padding: 10px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    #miniImgs li{
+        width: 260px;
+        height: 150px;
+        padding: 0 15px 0;
+        cursor: pointer;
+    }
+  
+    #miniImgs img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* Footer */
+
+    footer{
+        width: 100%;
+        height: 260px;
+        border-top: 1px solid #535353;
+    }
+
+    #footerTop{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+    }
+
+    #footerLeft{
+        width: 100%;
+        height: 100%;
+        padding: 30px 0 0 30px;
+    }
+
+    #footerTitle{
+        font-size: 22px;
+        font-family: 'Lobster', cursive;
+    }
+
+    #description{
+        font-size: 19px;
+        font-style: italic;
+    }
+
+    #socialIcons{
+        display: flex;
+        padding: 30px 0 0 0;
+    }
+
+    #socialIcons li a{
+        text-decoration: none;
+        padding:  0 11px 0 0;
+        color: black;
+    }
+
+
+    #footerMenu{
+        width: 100%;
+        height: 100%;
+        padding: 30px 0 0 10px;
+    }
+
+    #footerMenu li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 1s;
+    }
+
+    #footerMenu li a:last-child{
+        padding-top: 7px;
+    }
+
+    #footerMenu li a:hover{
+        color: #e80000;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100%;
+        padding: 30px 0 0 10px;
+    }
+
+    #contact a{
+        display: block;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    #contact a:hover{
+        color: #e80000;
+    }
+
+    #mail{
+        padding-top: 7px;
+    }
+
+    #location{
+        padding-top: 7px;
+    }
+
+    #footerBottom{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px;
+        font-size: 19px;
+        border-top: 1px solid #535353;
+    }
+
+    #designer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #designer a{
+        padding: 0 0 0 10px;
+        text-decoration: none;
+    }
+
+    #year{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@media screen and (min-width: 1200.1px){
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #home{
+        width: 100%;
+        height: 753px;
+    }
+
+
+    /* Header */
+    #header{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 0 150px;
+        color: black;
+    }
+
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    #title{
+        font-size: 30px;
+        padding: 65px 0 0 0;
+        font-family: 'Lobster', cursive;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        padding: 65px 0 0 0;
+    }
+
+    #navbar li{
+        padding: 0 30px 0 0;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        font-size: 21px;
+        transition: all 1s;
+        color: black;
+    }
+
+    #navbar a:hover{
+        color: #e80000;
+    }
+
+
+    /*SecondNavbar */
+    #secondNavbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 0 150px;
+        background-color: #535353;
+        color: white;
+    }
+
+    #telephone{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #telNumber{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    #homeSI{
+        width: 10%;
+        display: flex;
+    }
+
+    #homeSI li:last-child{
+        padding: 0 0 0 10px;
+    }
+
+    #homeSI a{
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px 7px 7px 9px;
+        color: black;
+        background: white; 
+    }
+
+
+    /* Slider */
+    #slider{
+        width: 100%;
+        height: 503px;
+    }
+
+    #sliderSection{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        align-items: center;
+    }
+
+    #leftArrow{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sliderSection img{
+        width: 60%;
+        height: 90%;
+    }
+
+    #rightArrow{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sliderDetails{
+        padding: 0 0 0 20%;
+        width: 100%;
+        height: 53px;
+        font-size: 22px;
+    }
+
+
+    /* gallery */
+
+    #gallery{
+        width: 100%;
+        height: 753px;
+        display: flex;
+        padding: 40px;
+    }
+
+    #menu{
+        width: 17%;
+        height: 670px;
+        background-color: #535353;
+        border: none;
+        margin: 0 3% 0 0;
+    }
+
+    #menu li{
+        padding: 20px 0 0 0;
+    }
+
+    #menu a{
+        display: block;
+        padding: 8px 8px 3px 8px;
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+        border-bottom: 1px solid white;
+        transition: all 1s;
+    }
+
+    #menu a:hover{
+        background-color: white;
+        color: #535353;
+    }
+
+    #products{
+        width: 80%;
+        height: 670px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .product{
+        width: 300px;
+        height: 300px;
+        border: none;
+        background-color: #eeeeee;
+    }
+
+    .productImg{
+        width: 300px;
+        height: 200px;
+    }
+
+    .productImg img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productDetails{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 19px;
+        padding: 0 10px;
+    }
+
+    .productAbout{
+        font-size: 17px;
+    }
+
+    .productPrice{
+        font-weight: 600;
+    }
+
+    .productPrice b{
+        font-weight: 100;
+    }
+
+    .productAdd{
+        width: 100%;
+        height: 50px;
+        font-size: 19px;
+        border: none;
+        background-color: #535353;
+        color: white;
+        transition: all 1s;
+    }
+
+    .productAdd:hover{
+        background-color: white;
+        color: #535353;
+    }
+
+
+    /* Footer */
+    footer{
+        width: 100%;
+        height: 400px;
+        border-top: 1px solid #535353;
+    }
+
+    #footerTop{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 150px;
+        font-size: 20px;
+    }
+
+    #footerLeft{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerTitle{
+        font-size: 22px;
+        font-family: 'Lobster', cursive;
+    }
+
+    #description{
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #socialIcons{
+        display: flex;
+        padding: 80px 0 0 0;
+    }
+
+    #socialIcons li a{
+        text-decoration: none;
+        padding:  0 11px 0 0;
+        color: black;
+    }
+
+
+    #footerMenu{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerMenu li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 1s;
+    }
+
+    #footerMenu li a:last-child{
+        padding-top: 7px;
+    }
+
+    #footerMenu li a:hover{
+        color: #e80000;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #contact a{
+        display: block;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    #contact a:hover{
+        color: #e80000;
+    }
+
+    #mail{
+        padding-top: 7px;
+    }
+
+    #location{
+        padding-top: 7px;
+    }
+
+    #footerBottom{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        font-size: 20px;
+        border-top: 1px solid #535353;
+    }
+
+    #designer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #designer a{
+        padding: 0 0 0 10px;
+    }
+
+    #year{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}

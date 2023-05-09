@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1200.1px){
+    #home{
+        width: 100%;
+        height: 250px;
+    }
+
+
+    /* Header */
+    #header{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 0 150px;
+        color: black;
+    }
+
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    #title{
+        font-size: 30px;
+        padding: 65px 0 0 0;
+        font-family: 'Lobster', cursive;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        padding: 65px 0 0 0;
+    }
+
+    #navbar li{
+        padding: 0 30px 0 0;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        font-size: 21px;
+        transition: all 1s;
+        color: black;
+    }
+
+    #navbar a:hover{
+        color: #e80000;
+    }
+
+
+    /*SecondNavbar */
+    #secondNavbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px 0 150px;
+        background-color: #535353;
+        color: white;
+    }
+
+    #telephone{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #telNumber{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    #homeSI{
+        width: 10%;
+        display: flex;
+    }
+
+    #homeSI li:last-child{
+        padding: 0 0 0 10px;
+    }
+
+    #homeSI a{
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 5px 7px 7px 9px;
+        color: black;
+        background: white;
+    }
+
+    /* section */
+    section{
+      width: 100%;
+      padding: 50px;
+    }
+
+    #product{
+      width: 100%;
+      display: flex;
+    }
+
+    #productImg{
+        width: 1300px;
+        height: 550px;
+    }
+
+    #mainImg{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #details{
+        display: block;
+        padding: 50px;
+    }
+
+    #about{
+        font-size: 21px;
+    }
+
+    #infos{
+        padding: 350px 10px 0 6px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #535353;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    #price{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #price a{
+        font-weight: 100;
+    }
+
+    #miniImgs{
+        width: 100%;
+        padding: 30px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #miniImgs li{
+        width: 260px;
+        height: 150px;
+        cursor: pointer;
+    }
+
+    #miniImgs img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Footer */
+
+    footer{
+        width: 100%;
+        height: 400px;
+        border-top: 1px solid #535353;
+    }
+
+    #footerTop{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 150px;
+        font-size: 20px;
+    }
+
+    #footerLeft{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerTitle{
+        font-size: 22px;
+        font-family: 'Lobster', cursive;
+    }
+
+    #description{
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #socialIcons{
+        display: flex;
+        padding: 80px 0 0 0;
+    }
+
+    #socialIcons li a{
+        text-decoration: none;
+        padding:  0 11px 0 0;
+        color: black;
+    }
+
+
+    #footerMenu{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerMenu li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 1s;
+    }
+
+    #footerMenu li a:last-child{
+        padding-top: 7px;
+    }
+
+    #footerMenu li a:hover{
+        color: #e80000;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #contact a{
+        display: block;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    #contact a:hover{
+        color: #e80000;
+    }
+
+    #mail{
+        padding-top: 7px;
+    }
+
+    #location{
+        padding-top: 7px;
+    }
+
+    #footerBottom{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        font-size: 20px;
+        border-top: 1px solid #535353;
+    }
+
+    #designer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #designer a{
+        padding: 0 0 0 10px;
+        text-decoration: none;
+    }
+
+    #year{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+    }
+}

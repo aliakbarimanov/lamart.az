@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@media screen and (max-width: 580px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #home{
+        width: 100%;
+    }
+
+    /* Header */
+    #header{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: black;
+        background-color: #535353;
+    }
+
+    #logo{
+        width: 60px;
+        height: 60px;
+        padding: 6px 10px 0 10px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    #title{
+        font-size: 22px;
+        padding: 36px 0 0 0;
+        font-family: 'Lobster', cursive;
+        color: white;
+    }
+    
+    #descriptionHead{
+        font-size: 20px;
+        padding: 41px 0 0 0;
+        color: white;
+    }
+
+
+    /*SecondNavbar */
+    #secondNavbar{
+        width: 100%;
+        display: flex;
+        padding: 20px 0 10px 20px;
+        background-color: white;
+        color: #535353;
+        font-size: 18px;
+    }
+
+    #user{
+        width: 100%;
+    }
+
+    #userImg{
+        width: 60px;
+        height: 45px;
+    }
+
+    #userImg img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #username{
+        padding: 5px 0 0 0;
+    }
+
+
+    /* Insert area */
+    #newPro{
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        border-top: 1px solid #535353;
+        display: flex;
+        justify-content: end;
+        padding: 10px 20px 15px 0;
+    }
+
+    #newPro button{
+        background-color: green;
+        color: white;
+        font-size: 18px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 11px;
+    }
+
+
+    /* insert form */
+    #insertForm{
+        padding: 30px 0 30px 35px;
+        border-top: 1px solid #535353;
+        display: none;
+    }
+
+    #insertForm h3{
+        font-size: 22px;
+    }
+
+    #insertForm form{
+        background-color: #535353;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    form label:first-child{
+        margin: 0;
+    }
+
+    form label{
+        margin: 10px 0 0 0;
+        font-size: 17px;
+        color: white;
+    }
+
+    form input{
+        height: 30px;
+        padding: 7px;
+        font-size: 17px;
+    }
+
+    form select{
+        height: 40px;
+        padding: 7px;
+    }
+
+    form textarea{
+        padding: 7px;
+    }
+
+    .formButtons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .formButtons button{
+        margin: 10px 0 0 0;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        width: 45%;
+    }
+
+    #enterPro{
+        background-color: green;
+        color: white;
+    }
+
+    #cancelPro{
+        background-color: yellow;
+        color: black;
+    }
+
+
+    /* Notification */
+    #editNot{
+        width: 100%;
+        color: black;
+        padding: 30px 0 30px 35px;
+        border-top: 1px solid #535353;
+        display: none;
+    }
+
+    #editNot form{
+        background-color: orange;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    form label:first-child{
+        margin: 0;
+    }
+
+    form label{
+        margin: 10px 0 0 0;
+        font-size: 17px;
+        color: white;
+    }
+
+    form input{
+        height: 30px;
+        padding: 7px;
+        font-size: 17px;
+    }
+
+    form select{
+        height: 40px;
+        padding: 7px;
+    }
+
+    form textarea{
+        padding: 7px;
+    }
+
+    .formButtons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .formButtons button{
+        margin: 10px 0 0 0;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        width: 45%;
+    }
+
+    #updatePro{
+        background-color: green;
+        color: white;
+    }
+
+    #cancelProEdit{
+        background-color: yellow;
+        color: black;
+    }
+
+    .updateInfo{
+        width: 100%;
+        text-align: center;
+        background-color: yellow;
+        color: black;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    #updateSuccess{
+        display: none;
+    }
+
+    #updateUnsuccess{
+        display: none;
+    }
+
+
+    /* Delete area */
+    #deleteNot{
+        width: 100%;
+        text-align: center;
+        background-color: firebrick;
+        color: white;
+        padding: 20px 0;
+        font-size: 20px;
+        display: none;
+    }
+
+    #deleteName a{
+        font-weight: 600;
+    }
+
+    #deleteButtons{
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    #deleteButtons button{
+        width: 40%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    #deleteOk{
+        background-color: green;
+        color: white;
+    }
+
+    #deleteCancel{
+        background-color: yellow;
+    }
+
+    .deleteInfo{
+        width: 100%;
+        text-align: center;
+        background-color: firebrick;
+        color: white;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    #deleteSuccess{
+        display: none;
+    }
+
+    #deleteUnsuccess{
+        display: none;
+    }
+
+    /* sectionNot */
+    #sectionNot{
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        background-color: #535353;
+        color: white;
+        padding: 40px 10px 10px;
+        font-size: 20px;
+        display: block;
+    }
+
+    /* Section */
+    section{
+        display: none;
+    }
+
+
+    /* Footer */
+    footer{
+        width: 100%;
+        border-top: 1px solid #535353;
+    }
+
+    #footerTop{
+        width: 100%;
+        font-size: 20px;
+        padding: 0 0 20px 0;
+    }
+
+    #footerLeft{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerTitle{
+        font-size: 22px;
+        font-family: 'Lobster', cursive;
+    }
+
+    #descriptionBottom{
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    #footerMenu{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+    #footerMenu li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: all 1s;
+    }
+
+    #footerMenu li a:last-child{
+        padding-top: 7px;
+    }
+
+    #footerMenu li a:hover{
+        color: #e80000;
+    }
+
+    #userFooter{
+        width: 100%;
+        height: 100%;
+        padding: 20px 0 0 20px;
+    }
+
+
+    #footerBottom{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        font-size: 15px;
+        border-top: 1px solid #535353;
+    }
+
+    #designer{
+        display: flex;
+        justify-content: start;
+    }
+
+    #designer a{
+        padding: 0 0 0 10px;
+        text-decoration: none;
+    }
+
+    #year{
+        display: flex;
+        justify-content: end;
+    }
+}
